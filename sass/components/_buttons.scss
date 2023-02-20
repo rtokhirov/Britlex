@@ -1,0 +1,73 @@
+.header__btn {
+  border: 2px solid $nav-color;
+  border-radius: 5px;
+  padding: 1.7rem 5.7rem;
+  color: $black-color;
+  @include responsive(m-desktop) {
+    padding: 1.2rem 4rem;
+  }
+  @include responsive(tablet) {
+    display: none;
+  }
+  &:hover {
+    background-color: $nav-color;
+    color: $white-color;
+  }
+}
+
+.learn__btn {
+  background-color: $nav-color;
+  border-radius: 15px;
+  padding: 2.2rem 8rem;
+  color: $white-color;
+  font-size: 3.6rem;
+  line-height: 0.6;
+  @include responsive(m-desktop) {
+    padding: 1.9rem 6.7rem;
+    font-size: 1.8rem;
+  }
+  @include responsive(phone) {
+  }
+  &:hover {
+    border: 2px solid;
+    background-color: $white-color;
+    color: $black-color;
+  }
+  &:active {
+    background-color: $nav-color;
+    color: $white-color;
+  }
+}
+
+.skills__btn {
+  background-color: $nav-color;
+  border-radius: 5px;
+  padding: 1.7rem 6.3rem;
+  color: $white-color;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 0.6;
+  @include responsive(desktop) {
+    padding: 1rem 4rem;
+  }
+  @include responsive(m-desktop) {
+    padding: 1rem 4rem;
+  }
+  @include responsive(tablet) {
+    padding: 0.5rem 2rem;
+  }
+  &:hover {
+    border: 2px solid;
+    background-color: $backgrount-color;
+    color: $black-color;
+  }
+  &:active {
+    background-color: $nav-color;
+    color: $white-color;
+  }
+}
+.contact__btn {
+  @include responsive(m-desktop) {
+    padding: 2rem 6rem;
+  }
+}

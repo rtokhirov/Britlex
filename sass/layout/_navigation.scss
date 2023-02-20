@@ -1,0 +1,23 @@
+nav {
+  @include responsive(tablet) {
+    display: none;
+  }
+  ul {
+    display: flex;
+    gap: 3rem;
+    li {
+      a {
+        color: $nav-color;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 0.6;
+        @include responsive(m-desktop) {
+          font-size: 1.6rem;
+        }
+      }
+      a:hover {
+        color: $text-color;
+      }
+    }
+  }
+}

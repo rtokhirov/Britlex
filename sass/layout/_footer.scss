@@ -1,0 +1,21 @@
+.footer {
+  padding: 20px 0;
+  &__div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.2rem;
+    gap: 2rem;
+    @include responsive(phone) {
+      flex-direction: column;
+    }
+    img {
+      &:hover {
+        opacity: 0.8;
+      }
+      &:active {
+        opacity: 0.6;
+      }
+    }
+  }
+}
